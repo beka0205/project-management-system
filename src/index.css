@@ -1,0 +1,25 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.list {
+    @apply hover:bg-[#E9F2FF] md:w-[240px] font-bold hover:text-[#0C66E4] active:bg-[#082F49] active:text-white rounded flex items-center my-2 py-4 ;
+}
+
+.stats {
+    @apply bg-[#082F49] max-w-[300px] sm:w-[100px] md:w-[150px] lg:w-[260px] p-3 md:align-middle rounded-md flex gap-4;
+}
+
+.card {
+    @apply w-[340px] h-[230px] shadow-lg rounded border-2 p-4 ;
+}
+
+@layer utilities {
+    .shadow-top {
+      box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1),
+                  0 -2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+  }
+
+
